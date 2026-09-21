@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KCal — Support</title>
+<style>
+  :root{--paper:#fff;--tint:#F5F8F6;--ink:#12161A;--ink2:#5B6670;--rule:#E4EAE7;--sage:#43A97A}
+  *{box-sizing:border-box}
+  body{margin:0;padding:40px 20px 72px;background:var(--paper);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+  main{max-width:38rem;margin:0 auto}
+  .mark{width:56px;height:56px;border-radius:13px;background:var(--sage);display:grid;place-items:center}
+  h1{font-size:28px;letter-spacing:-.02em;margin:18px 0 4px}
+  p.lede{color:var(--ink2);margin:0 0 30px}
+  h2{font-size:17px;margin:32px 0 8px;padding-bottom:6px;border-bottom:1px solid var(--rule)}
+  p{margin:0 0 12px}
+  a{color:var(--sage)}
+  dl{margin:0}
+  dt{font-weight:600;margin-top:16px}
+  dd{margin:4px 0 0;color:var(--ink2)}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule);color:var(--ink2);font-size:14px}
+</style></head>
+<body><main>
+  <div class="mark">
+    <svg viewBox="0 0 100 100" width="34" height="34" aria-label="KCal">
+      <g fill="#fff"><rect x="19" y="30" width="62" height="6" rx="3"/>
+      <path d="M23,45 H77 A27,27 0 0,1 23,45 Z"/></g>
+      <rect x="29" y="52" width="42" height="5" rx="2.5" fill="#43A97A"/>
+    </svg>
+  </div>
+  <h1>KCal Support</h1>
+  <p class="lede">A calorie and macro tracker for iPhone. If something is wrong or missing, write to
+    <a href="mailto:timothy.de.mey@gmail.com">timothy.de.mey@gmail.com</a> and say which iPhone and
+    iOS version you are on. Replies usually come within a few days.</p>
+
+  <h2>Common questions</h2>
+  <dl>
+    <dt>Do I need an account?</dt>
+    <dd>No. Open the app and start logging. There is nothing to sign up for.</dd>
+
+    <dt>Where is my data kept?</dt>
+    <dd>On the phone, in the app's own database, which is included in your iPhone backup.
+      Nothing is sent anywhere unless you set up a backup server of your own in Settings.</dd>
+
+    <dt>Why does a meal say "estimate"?</dt>
+    <dd>Because nothing measured it. A row from a barcode or from your pantry carries values
+      somebody recorded; an estimate is a considered guess at a portion. Every row says which
+      it is, and you can correct any of them by hand.</dd>
+
+    <dt>A row is flagged and counted as zero.</dt>
+    <dd>Its energy does not match its macros, so the app will not add it up silently. Open the
+      row, correct the values, and it counts again. Wine and beer usually need their alcohol
+      filled in; sugar-free products need their polyols.</dd>
+
+    <dt>Plate measurement does not work.</dt>
+    <dd>It needs the depth camera, so it runs on iPhones with LiDAR or a dual camera, and only
+      on the device itself. Photos taken from your library carry no depth. Everything else
+      works regardless.</dd>
+
+    <dt>Apple Health is not showing up.</dt>
+    <dd>Open Settings in the app, tap Apple Health, and allow the types it asks for. iOS only
+      shows that sheet for types it has never been asked about, so if nothing appears, turn
+      them on in the Health app under Sharing &rsaquo; Apps &rsaquo; KCal.</dd>
+
+    <dt>How do I delete everything?</dt>
+    <dd>Delete the app. That removes the database with it. There is no copy on a server unless
+      you configured one yourself, and you control that server.</dd>
+  </dl>
+
+  <h2>Reporting a problem</h2>
+  <p>Say what you did, what you expected, and what happened instead. A screenshot helps more
+    than a description of the screen. If a meal came out wrong, the text or photo you logged
+    is the most useful thing to send.</p>
+
+  <footer>
+    KCal is not a medical device. Calorie and macro values are estimates, for information only,
+    and are not medical or dietary advice.<br>
+    &copy; 2026 Timothy De Mey · <a href="privacy.html">Privacy</a>
+  </footer>
+</main></body></html>
